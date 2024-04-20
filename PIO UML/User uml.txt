@@ -1,0 +1,26 @@
+// Kalendarz
+[Calendar|+ tasks: Task_list;+ addTask(): void;+ removeTask(): void;+ editTask(): void ]
+
+[Task|+ title: string;+ description: string;+ dueDate: Date;+ dueTime: Time;+ accessibility: string]
+
+[User|+ username: string;+ password: string;+ email: string;+ firstname: string;+avatar: Image; +bio: string;+accessibility: string;+ lastname: string;+univeristy: string;+ login(): void;+ register(): void;+logout(): void]
+
+[To-do| +title: string; +done: boolean; +addTodo(): void; +removeTodo(): void]
+
+[Friends list| +friends: User_list; +addFriend(): void; +removeFriend(): void; +followFriend(): void]
+
+[Event| +title: string; +description: string; +start: Time; +end: Time; +constInfo: Company details; +image: Image; +addOpinion(): void; +addToCalendar(): void]
+
+[Event list| +events: Event_list]
+
+[Notification| +title: string]
+
+[User|+ username: string;+ password: string;+ email: string;+ firstname: string;+avatar: Image; +bio: string;+accessibility: string;+ lastname: string;+univeristy: string;+ login(): void;+ register(): void;+logout(): void]<>-1[Calendar|+ tasks: Task_list;+ addTask(): void;+ removeTask(): void;+ editTask(): void ]
+
+[User|+ username: string;+ password: string;+ email: string;+ firstname: string;+avatar: Image; +bio: string;+accessibility: string;+ lastname: string;+univeristy: string;+ login(): void;+ register(): void;+logout(): void]<>-1[To-do| +title: string; +done: boolean; +addTodo(): void; +removeTodo(): void]
+
+[User|+ username: string;+ password: string;+ email: string;+ firstname: string;+avatar: Image; +bio: string;+accessibility: string;+ lastname: string;+univeristy: string;+ login(): void;+ register(): void;+logout(): void]<>-1[Friends list| +friends: User_list; +addFriend(): void; +removeFriend(): void; +followFriend(): void]
+
+[User|+ username: string;+ password: string;+ email: string;+ firstname: string;+avatar: Image; +bio: string;+accessibility: string;+ lastname: string;+univeristy: string;+ login(): void;+ register(): void;+logout(): void]<>-1[Event list| +events: Event_list]
+
+[User|+ username: string;+ password: string;+ email: string;+ firstname: string;+avatar: Image; +bio: string;+accessibility: string;+ lastname: string;+univeristy: string;+ login(): void;+ register(): void;+logout(): void]<>-0..*[Notification| +title: string]

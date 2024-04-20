@@ -1,0 +1,21 @@
+[Service provider| +companyName: string; +email: string; +login: string ;-password: string; +phoneNumber: string; +login(): void;+register(): void;+logout(): void]
+
+[Company details| +address: string; +openHours: string; +menu: string]
+
+[Opinion| +userName: string; +rate: unsigned short; +description: string]
+
+[Opinions list| +opinions: Opinion_list]
+
+[Event| +title: string; +description: string; +start: Time; +end: Time; +image: Image; +price: unsigned double; +editEvent(): void]
+
+[Events list| +events: Event_list; +addEvent(): void; +removeEvent(): void]
+
+[Chart| +countOfStudents: unsigned int_list]
+
+[Service provider| +companyName: string; +email: string; +login: string ;-password: string; +phoneNumber: string; +login(): void;+register(): void;+logout(): void]<>-1[Company details| +address: string; +openHours: string; +menu: string]
+
+[Service provider| +companyName: string; +email: string; +login: string ;-password: string; +phoneNumber: string; +login(): void;+register(): void;+logout(): void]<>-1[Opinions list| +opinions: Opinion_list]
+
+[Service provider| +companyName: string; +email: string; +login: string ;-password: string; +phoneNumber: string; +login(): void;+register(): void;+logout(): void]<>-1[Events list| +events: Event_list; +addEvent(): void; +removeEvent(): void]
+
+[Service provider| +companyName: string; +email: string; +login: string ;-password: string; +phoneNumber: string; +login(): void;+register(): void;+logout(): void]<>-1[Chart| +countOfStudents: unsigned int_list]
