@@ -1,0 +1,29 @@
+tabela dla użytkowników
+id_użytkownika, imie, nazwisko, email, login, hasło, uczelnia, rok urodzenia, avatar, bio, widoczność
+
+tabela znajomi
+id_użytkownika, id_znajomego
+
+tabela dla usługodawców
+id_usługodawcy, nazwa firmy, email, login, hasło, nr. telefonu
+
+tabela szczegóły usługodawcy
+id_usługodawcy, adres, godziny otwarcia, menu
+
+tabela powiadomień dla użytkowników
+id, opis, czas, id_użytkownika
+
+tabela wydarzenia
+id_wydarzenia, id_usługodawcy, nazwa, opis, cena, zdjęcie, czas rozpoczęcia, czas zakończenia
+
+tabela relacji wydarzenia-użytkownicy
+id_użytkownika, id_wydarzenia
+
+tabela kalendarz
+id_użytkownika, czas rozpoczęcia, czas zakończenia, nazwa, notatka, widocznośc, id_wydarzenia(jeżeli jest null to wydarzenie jest osobiste, jeżeli ma wartość to jest wzięte z listy wydarzeń)
+
+tabela to-do
+id_todo, id_użytkownika, nazwa, czy_zrobione 
+
+tabela opinie
+id_opini, id_usługodawcy, id_użytkownika, ilość gwiazdek, opis, czas
