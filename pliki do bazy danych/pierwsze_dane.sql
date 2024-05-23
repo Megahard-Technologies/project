@@ -52,8 +52,14 @@ VALUES (3, 'SEKCJA SIATKÓWKI DLA STUDENTÓW', 'Lorem ipsum', '2024-05-21 16:00'
 select * from wydarzenia;
 
 INSERT INTO opinie (id_uslugodawcy, ilosc_gwiazdek, opis, czas)
-VALUES (1, 3, 'Lorem ipsum', now()),
-(2, 4, 'Lorem ipsum', now());
+VALUES 
+(1, 4, 'Lorem ipsum', now()),(1, 4, 'Lorem ipsum', '2024-05-19'),(1, 3, 'Lorem ipsum', '2024-04-29'),(1, 5, 'Lorem ipsum', '2024-03-09'),
+(2, 4, 'Lorem ipsum', now()),(2, 5, 'Lorem ipsum', '2024-05-18'),(2, 5, 'Lorem ipsum', '2024-01-06'),(2, 4, 'Lorem ipsum', '2023-12-14'),
+(3, 3, 'Lorem ipsum', now()),(3, 2, 'Lorem ipsum', '2024-03-27'),(3, 2, 'Lorem ipsum', '2024-01-01'),(3, 1, 'Lorem ipsum', '2024-05-05'),
+(4, 5, 'Lorem ipsum', now()),(4, 5, 'Lorem ipsum', '2024-02-19'),(4, 5, 'Lorem ipsum', '2024-02-02'),(4, 4, 'Lorem ipsum', '2024-04-06'),
+(5, 4, 'Lorem ipsum', now()),(5, 4, 'Lorem ipsum', '2024-01-13'),(5, 4, 'Lorem ipsum', '2024-03-03'),(5, 4, 'Lorem ipsum', '2024-03-07'),
+(6, 1, 'Lorem ipsum', now()),(6, 2, 'Lorem ipsum', '2024-05-30'),(6, 3, 'Lorem ipsum', '2024-04-04'),(6, 4, 'Lorem ipsum', '2024-02-08'),
+(7, 1, 'Lorem ipsum', now()),(7, 3, 'Lorem ipsum', '2024-04-12'),(7, 5, 'Lorem ipsum', '2024-05-05'),(7, 5, 'Lorem ipsum', '2024-01-09');
 
 select * from opinie;
 
